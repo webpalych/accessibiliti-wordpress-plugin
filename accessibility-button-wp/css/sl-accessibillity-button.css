@@ -1,0 +1,117 @@
+.accessibility-wrapper {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 3000;
+}
+.accessibility-action svg {
+    width: 20px;
+    height: 20px;
+}
+.accessibility-main-btn svg {
+    width: 30px;
+    height: 30px;
+}
+.accessibility-main-btn {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    padding: 12px;
+    line-height: 1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    transition: background-color 0.4s; 
+    cursor: pointer;
+    display: inline-block;
+}
+
+.accessibility-main-btn:hover, .accessibility-action:hover {
+    background-color: #000;
+}
+.accessibility-main-btn:hover svg path, .accessibility-action:hover svg path {
+    fill: #fff;
+}
+.accessibility-action {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    padding:15px;
+    color: black;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 1;
+    margin-left: 13px;
+    margin-bottom: 10px;
+    position: relative;
+    left: -12px;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+    display: none;
+    cursor: pointer;
+}
+
+.accessibility-action i {
+  position: absolute;
+  left: 10px;
+    top: 8px;
+}
+
+.a11y-toolbar {
+    display: none!important;
+}
+
+.accessibility-title {
+    background-color: #fff;
+    color: #000;
+    padding: 2px 5px;
+    font-size: 18px;
+    position: absolute;
+    width: auto;
+    left: 60px;
+    top: 8px;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+.accessibility-title:after {
+   content: "";
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 11px solid #fff;
+    position: absolute;
+    top: 0px;
+    left: -10px;
+  }
+
+  .accessibility-action:hover .accessibility-title {
+    opacity: 1;
+  }
+
+  .acc-grayscale {
+    -moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    filter: grayscale(100%);
+}
+
+.acc-bg-white-important {
+    background-color: #fff!important;
+    color: #000!important;
+}
+
+input.acc-bg-white-important {
+    border-color: #000!important;
+}
+
+.acc-font {
+    font-family: Arial, sans-serif!important;
+}

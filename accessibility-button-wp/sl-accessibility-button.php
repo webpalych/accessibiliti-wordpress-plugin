@@ -20,27 +20,27 @@ function sl_access_button_create_button () {
 
 echo '<div class="accessibility-wrapper">
         <div class="accessibility-action accessibility-font">
-            ' . file_get_contents(plugins_url('icons/font.svg', __FILE__)) . '
+            ' . file_get_contents( __DIR__ . '/icons/font.svg') . '
             <div class="accessibility-title"><div>' . __('Font reading', 'sl-accessibility-button') . '</div></div>
         </div>
         <div class="accessibility-action accessibility-white">
-            ' . file_get_contents(plugins_url('icons/repeat.svg', __FILE__)) . '
+            ' . file_get_contents( __DIR__ . '/icons/repeat.svg') . '
             <div class="accessibility-title"><div>' . __('White background', 'sl-accessibility-button') . '</div></div>
         </div>
         <div class="accessibility-action accessibility-grayscale">
-            ' . file_get_contents(plugins_url('icons/tint.svg', __FILE__)) . '
+            ' . file_get_contents( __DIR__ . '/icons/tint.svg') . '
             <div class="accessibility-title"><div>' . __('Grayscale', 'sl-accessibility-button') . '</div></div>
         </div>
         <div class="accessibility-action accessibility-adjust" id="is_normal_contrast">
-            ' . file_get_contents(plugins_url('icons/adjust.svg', __FILE__)) . '
+            ' . file_get_contents( __DIR__ . '/icons/adjust.svg') . '
             <div class="accessibility-title"><div>' . __('High contrast', 'sl-accessibility-button') . '</div></div>
         </div>
         <div class="accessibility-action accessibility-text">
-            ' . file_get_contents(plugins_url('icons/text-height.svg', __FILE__)) . '
+            ' . file_get_contents( __DIR__ . '/icons/text-height.svg') . '
             <div class="accessibility-title"><div>' . __('Text size', 'sl-accessibility-button') . '</div></div>
         </div>
         <div class="accessibility-main-btn">
-            ' . file_get_contents(plugins_url('icons/wheelchair.svg', __FILE__)) . '
+            ' . file_get_contents( __DIR__ . '/icons/wheelchair.svg') . '
         </div>
     </div>';
 }
